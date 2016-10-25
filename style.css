@@ -1,0 +1,428 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+@font-face {
+    font-family: Aleo-Bold;
+    src: url('assets/fonts/Aleo-Bold.otf');
+}
+@font-face {
+    font-family: Aleo-BoldItalic;
+    src: url('assets/fonts/Aleo-BoldItalic.otf');
+}
+@font-face {
+    font-family: Aleo-Italic;
+    src: url('assets/fonts/Aleo-Italic.otf');
+}
+@font-face {
+    font-family: Aleo-Light;
+    src: url('assets/fonts/Aleo-Light.otf');
+}
+@font-face {
+    font-family: Aleo-LightItalic;
+    src: url('assets/fonts/Aleo-LightItalic.otf');
+}
+@font-face {
+    font-family: Aleo-Regular;
+    src: url('assets/fonts/Aleo-Regular.otf');
+}
+@font-face {
+    font-family: Bazar;
+    src: url('assets/fonts/Bazar.ttf');
+}
+@font-face {
+    font-family: glyphicons-halflings-regular;
+    src: url('assets/fonts/glyphicons-halflings-regular.woff');
+}
+@font-face {
+    font-family: WCManoNegraBoldBta;
+    src: url('assets/fonts/WCManoNegraBoldBta.otf');
+}
+@font-face {
+    font-family: WCManoNegraBta;
+    src: url('assets/fonts/WCManoNegraBta.otf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    min-width: 100%;
+}
+.navbar {
+    margin-bottom: -20px;
+}
+.container-fluid {
+    max-width: 960px;
+    margin: -1px auto;
+    position: relative;
+}
+.logo {
+    width: 100px;
+	height: 50px;
+    display: block;
+    float: left;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.logo:hover {
+    background-color: #3e3a3a;
+}
+.navbar .container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+.navbar-brand {
+    margin-top: 10px;
+    background: url('assets/img/logo.png') no-repeat 0 0;
+    width: 81px;
+	height: 30px;
+}
+.logo:hover .navbar-brand  { 
+    background: #3e3a3a url("assets/img/logo-white.png") no-repeat;
+    width: 81px;
+	height: 30px;
+}
+.navbar-default .navbar-nav li {
+    transition: all 0.5s;
+}
+.navbar-default .navbar-nav li:hover {
+    background-color: #3e3a3a;
+}
+.navbar-default .navbar-nav li a {
+    font-family: Aleo-Regular;
+    text-align: center;
+}
+.navbar-default .navbar-nav li:hover a {
+    color: white;
+}
+header {
+    width: 100%;
+    height: 570px;
+    background: url('assets/img/billboard_bg.png') no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid #FF4949;
+}
+header h1, h4 {
+    color: white;
+}
+h1 {
+    padding-top: 10%;
+    font-family: WCManoNegraBoldBta;
+    font-size: 5em;
+    text-transform: capitalize;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    font-family: Aleo-Light;
+}
+.billboard h4 hr {
+    width: 50px;
+    display: inline-block;
+    margin: 5px;
+}
+.menu {
+    width: 140px;
+    height: 50px;
+    background: #FF4949;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: Aleo-Bold;
+    position: relative;
+    padding-top: 10px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid white;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    position: absolute;
+    bottom: 0;
+}
+section {
+/*    width: 960px;*/
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+section ul {
+    max-width: 420px;
+    margin: 50px 0;
+    padding-left: 40px;
+}
+section li {
+    font-family: Aleo-Regular;
+    font-size: 20px;
+    position: relative;
+}
+section li h3 {
+    font-family: Aleo-Regular;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    display: inline-block;
+}
+section li p {
+    color: lightgray;
+    font-family: Aleo-LightItalic;
+    font-size: 15px;
+}
+section li:hover {
+    background: Lavender;
+}
+.bloc {
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    height: 30px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+.left, .arrow {
+    display: inline-block;
+    line-height: 30px;
+}
+.left {
+    width: 80px;
+    line-height: 30px;
+    color: gray;
+    position: absolute;
+    left: 10px;
+}
+.bloc:hover .left, .arrow {
+    border-color: black;
+    color: black;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    color: gray;
+}
+.title {
+    height: 100px;
+    margin-top: 50px;
+}
+.title h2, hr {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: Aleo-Regular;
+    text-transform: uppercase;
+    display: inline-block;
+    float: left;
+}
+h2 hr {
+    width: 150px;
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin: 10px;
+}
+.circle {
+    display: inline-block;
+    float: right;
+}
+section .title .circle {
+    margin: 0;
+}
+.circle li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background: grey;
+    margin: 5px;
+    cursor: pointer;
+}
+.circle li:hover {
+    background: black;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.image {
+    background: url('assets/img/dishes.png') no-repeat;
+    width: 229px;
+    height: 199px;
+}
+.box {
+    width: 229px;
+    margin-top: 10px;
+}
+.box h5, .box > span {
+    display: inline-block;
+    font-family: Aleo-Regular;
+    font-size: 15px;
+    margin: 0;
+}
+.box h5 {
+    float: left;
+}
+.box > span {
+    float: right;
+    margin-top: -2px;
+}
+.box .star li {
+    display: inline-block;
+    float: left;
+    color: gray;
+}
+.box .star li:hover {
+    color: rgb(252, 214, 10);
+    background: none;
+}
+.star ul {
+    margin: 20px 0;
+    padding: 0;
+}
+.gallery {
+    padding: 0;
+}
+.meals {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    background: #031318;
+    position: relative;
+}
+.meals img {
+    width: 100%;
+    box-sizing: content-box;
+    opacity: 0.5;
+}
+.subtitle {
+    display: block;
+    background: #FF8C00;
+    color: white;
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    bottom: -70px;
+    left: 0px;
+    padding: 10px;
+    opacity: 0;
+    transition:  all 1s ease-in-out;
+}
+.meals:hover img {
+    opacity: 1;
+}
+.meals:hover .subtitle {
+    opacity: 0.7;
+    bottom: 0;
+}
+.meals p {
+    margin: 0;
+    font-size: 20px;
+    font-family: Aleo-Regular;
+}
+.meals p:nth-child(2) {
+    font-size: 14px;
+}
+footer {
+    width: 100%;
+    background: #3B3B3B;
+    color: gray;
+    margin-top: 100px;
+}
+.columns {
+/*    width: 960px;*/
+    position: relative;
+    margin: 50px auto;
+    font-family: Aleo-Regular;
+}
+.contacts {
+    
+}
+.columns ul li {
+    padding-bottom: 20px;
+}
+.blog {
+    
+}
+.blog ul li a {
+    color: white;
+    text-transform: capitalize;
+}
+.blog ul li a:hover {
+    color: gray;
+    background: none;
+}
+.footer-logo {
+    
+}
+.footer-logo .logo {
+    padding: 0px;
+    margin-right: 100%;
+    margin-bottom: 30px;
+}
+.footer-logo  ul {
+    
+}
+.footer-logo a {
+    color: white;
+}
+.footer-logo a:hover {
+    color: gray;
+    background: none;
+}
+.contacts ul li:nth-child(3n+1) {
+    color: white;
+}
+footer .columns a {
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    section {
+        float: none;
+        margin: 0px auto;
+    }
+    .meals img {
+        width: 100%;
+    }
+    .gallery {
+        width: 367px;
+        float: none;
+        margin: 5px auto;
+    }
+    .dishes, .foot {
+        width: 229px;
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 768px) {
+    section, .columns { width: 750px; }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .gallery {
+        margin: 5px;
+    }
+}
+@media (max-width: 992px) {
+    .menu-list { 
+        width: 420px;
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 992px) {
+    section, .columns { width: 960px; }
+}
+@media (min-width: 1200px) {
+    section, .columns { width: 1100px; }
+}
