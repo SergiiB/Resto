@@ -56,8 +56,9 @@ img {
     margin-bottom: -20px;
 }
 .container-fluid {
-    max-width: 960px;
+    max-width: 1100px;
     margin: -1px auto;
+    padding: 0;
     position: relative;
 }
 .logo {
@@ -145,16 +146,23 @@ h4 {
     bottom: 0;
 }
 section {
-/*    width: 960px;*/
     margin: 0 auto;
+}
+section .row {
+    margin: 0;
 }
 li {
     list-style: none;
 }
-section ul {
-    max-width: 420px;
+section .menu-list {
+    padding: 0;
+}
+section .menu-list ul {
+    width: 420px;
     margin: 50px 0;
-    padding-left: 40px;
+}
+section .menu-list .menu-right {
+    float: right;
 }
 section li {
     font-family: Aleo-Regular;
@@ -201,7 +209,6 @@ section li:hover {
     border-color: black;
     color: black;
 }
-
 .arrow {
     width: 20px;
     height: 20px;
@@ -230,14 +237,14 @@ h2 hr {
     display: inline-block;
     margin: 10px;
 }
-.circle {
+section .circle {
     display: inline-block;
     float: right;
 }
 section .title .circle {
     margin: 0;
 }
-.circle li {
+section .circle li {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -247,7 +254,7 @@ section .title .circle {
     margin: 5px;
     cursor: pointer;
 }
-.circle li:hover {
+section .circle li:hover {
     background: black;
 }
 .clearfix::after {
@@ -255,57 +262,63 @@ section .title .circle {
     display: table;
     clear: both;
 }
-.image {
-    background: url('assets/img/dishes.png') no-repeat;
+section .row .dishes {
     width: 229px;
-    height: 199px;
+    padding: 0;
+    margin-right: 60px;
 }
-.box {
+section .row .dishes:nth-child(5) {
+    margin-right: 0px;
+}
+section .dishes .featured-dishes {
+    width: 229px;
+}
+section .box {
     width: 229px;
     margin-top: 10px;
 }
-.box h5, .box > span {
+section .box h5, .box > span {
     display: inline-block;
     font-family: Aleo-Regular;
     font-size: 15px;
     margin: 0;
 }
-.box h5 {
+section .box h5 {
     float: left;
 }
-.box > span {
+section .box > span {
     float: right;
     margin-top: -2px;
 }
-.box .star li {
+section .box .star li {
     display: inline-block;
     float: left;
     color: gray;
 }
-.box .star li:hover {
+section .box .star li:hover {
     color: rgb(252, 214, 10);
     background: none;
 }
-.star ul {
+section .star ul {
     margin: 20px 0;
     padding: 0;
 }
-.gallery {
+section .gallery {
     padding: 0;
 }
-.meals {
+section .meals {
     width: 100%;
     cursor: pointer;
     overflow: hidden;
     background: #031318;
     position: relative;
 }
-.meals img {
+section .meals img {
     width: 100%;
     box-sizing: content-box;
     opacity: 0.5;
 }
-.subtitle {
+section .subtitle {
     display: block;
     background: #FF8C00;
     color: white;
@@ -318,19 +331,19 @@ section .title .circle {
     opacity: 0;
     transition:  all 1s ease-in-out;
 }
-.meals:hover img {
+section .meals:hover img {
     opacity: 1;
 }
-.meals:hover .subtitle {
+section .meals:hover .subtitle {
     opacity: 0.7;
     bottom: 0;
 }
-.meals p {
+section .meals p {
     margin: 0;
     font-size: 20px;
     font-family: Aleo-Regular;
 }
-.meals p:nth-child(2) {
+section .meals p:nth-child(2) {
     font-size: 14px;
 }
 footer {
@@ -340,7 +353,6 @@ footer {
     margin-top: 100px;
 }
 .columns {
-/*    width: 960px;*/
     position: relative;
     margin: 50px auto;
     font-family: Aleo-Regular;
@@ -399,16 +411,23 @@ footer .columns a {
         float: none;
         margin: 5px auto;
     }
-    .dishes, .foot {
+    section .row .dishes, .foot {
         width: 229px;
         float: none;
         margin: 0 auto;
+    }
+    section .row .dishes:nth-child(5) {
+    margin: 0 auto;
     }
 }
 @media (min-width: 768px) {
     section, .columns { width: 750px; }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+    section .row .dishes {
+    margin-right: 60px;
+    margin-left: 80px;
+    }
     .gallery {
         margin: 5px;
     }
@@ -422,7 +441,16 @@ footer .columns a {
 }
 @media (min-width: 992px) {
     section, .columns { width: 960px; }
+    section .row .dishes {
+        width: 229px;
+        margin-right: 14px;
+    }
 }
 @media (min-width: 1200px) {
     section, .columns { width: 1100px; }
+    section .row .dishes {
+    width: 230px;
+    padding: 0;
+    margin-right: 60px;
+    }
 }
